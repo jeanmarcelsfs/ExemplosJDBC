@@ -12,7 +12,7 @@ public class SingleConnection {
 	private static void conectar() {
 		try {
 			if (connection == null) {
-				Class.forName("om.microsoft.sqlserver.jdbc.SQLServerDriver");
+				Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 				connection = DriverManager.getConnection(url, user, password);
 				connection.setAutoCommit(false);
 			}
